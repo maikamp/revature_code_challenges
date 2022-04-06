@@ -16,6 +16,11 @@ public class CircularArray<T> implements Iterable<T> {
 		this.size = array.length;
 	}
 
+	public CircularArray(T[] array) {
+		this.array = array;
+		this.size = array.length;
+	}
+
 	/*
 	 * @param
 	 * 
@@ -40,8 +45,9 @@ public class CircularArray<T> implements Iterable<T> {
 	}
 
 	/*
-	 * @param Shifts the indexed values left given negative value or right given
-	 * positive value
+	 * @param
+	 * Shifts the indexed values left given negative value or right given positive
+	 * value
 	 */
 	public void rotate(int steps) {
 		Object[] results = new Object[size];
